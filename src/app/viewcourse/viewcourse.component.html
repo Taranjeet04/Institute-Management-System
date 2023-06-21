@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+td,th
+{
+    text-align: center;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+</head>
+<body>
+
+
+<table>
+    <thead>
+  <tr>
+    <th>Course Name</th>
+    <th>Course Date</th>
+    <th>Course Timing</th>
+    <th>Course Days</th>
+    <th>Course Duration</th>
+    <th>Course Location</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let s of couarr"> 
+    <td>{{s.courseName|titlecase}}</td>
+    <td>{{s.courseDate}}</td>
+    <td>{{s.courseTiming}}</td>
+    <td>{{s.courseDays}}</td>
+    <td>{{s.courseDuration|titlecase}}</td>
+    <td>{{s.courseLocation|titlecase}}</td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>
+
+

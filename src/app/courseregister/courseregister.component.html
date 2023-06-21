@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- Created By CodingLab - www.codinglabweb.com -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="container">
+    <div class="title">Course Registration</div>
+    <div class="content">
+      <form #mycou="ngForm" (ngSubmit)="SaveCourse(mycou)" novalidate>
+        <div class="user-details">
+          <div class="input-box">
+            <span class="details">Course Name</span>
+            <input type="text" placeholder="Course name" name="courseName" required ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Start Date</span>
+            <input type="date" placeholder="DD/MM/YYYY" name="courseDate" required ngModel> 
+          </div>
+          <div class="input-box">
+            <span class="details">Timing</span>
+            <input type="text" placeholder="Timings" name="courseTiming" required ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Days</span>
+            <input type="text" placeholder="Days" name="courseDays" required ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Duration</span>
+            <input type="text" placeholder="Total Months" name="courseDuration" required ngModel>
+          </div>
+          <div class="input-box">
+            <span class="details">Location</span>
+            <input type="text" placeholder="Location" name="courseLocation" required ngModel>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit" [disabled]="!mycou.valid">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

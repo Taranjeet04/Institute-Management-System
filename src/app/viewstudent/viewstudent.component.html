@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+td,th
+{
+    text-align: center;
+}
+
+tr:hover{background-color:#f5f5f5}
+</style>
+</head>
+<body>
+
+
+<table>
+    <thead>
+  <tr>
+    <th>First Name</th>
+    <th>Last Name</th>
+    <th>Email</th>
+    <th>Mobile</th>
+    <th>City</th>
+    <th>Course</th>
+    <th>Center</th>
+    <th>Branch</th>
+    <th>Degree</th>
+    <th>Date</th>
+    <th>Username</th>
+    <th>Password</th>
+  </tr>
+</thead>
+<tbody>
+  <tr *ngFor="let s of stdarr"> 
+    <td>{{s.firstName|titlecase}}</td>
+    <td>{{s.lastName|titlecase}}</td>
+    <td>{{s.email}}</td>
+    <td>{{s.contact}}</td>
+    <td>{{s.city|titlecase}}</td>
+    <td>{{s.course|titlecase}}</td>
+    <td>{{s.center|titlecase}}</td>
+    <td>{{s.branch|titlecase}}</td>
+    <td>{{s.degree|titlecase}}</td>
+    <td>{{s.passYear}}</td>
+    <td>{{s.username}}</td>
+    <td>{{s.passwordr}}</td>
+  </tr>
+</tbody>
+</table>
+
+</body>
+</html>

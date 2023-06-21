@@ -1,0 +1,55 @@
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+            <div class="title">Welcome Admin</div>
+
+            <div class="main">
+                <input type="checkbox" id="drop-1" hidden>
+                <label class="dropHeader dropHeader-1" for="drop-1">Student</label>
+                <div class="list list-1">
+                <div class="item"><a routerLink="register">Register</a></div>
+                <div class="item"><a routerLink="viewstudent">Show</a></div>
+                </div>
+            </div>
+            
+            
+            <div class="main">
+                <input type="checkbox" id="drop-2" hidden>
+                <label class="dropHeader dropHeader-2" for="drop-2">Enquiry</label>
+                <div class="list list-2">
+                <div class="item"><a routerLink="viewenquiry">Show</a></div>
+               
+                </div>
+            </div>
+            
+            <div class="main">
+                <input type="checkbox" id="drop-3" hidden>
+                <label class="dropHeader dropHeader-3" for="drop-3">Faculty</label>
+                <div class="list list-3">
+                <div class="item"><a routerLink="facultyregister">Register</a></div>
+                <div class="item"><a routerLink="viewfaculty">Show</a></div>
+               
+                </div>
+            </div>
+            
+            <div class="main">
+                <input type="checkbox" id="drop-4" hidden>
+                <label class="dropHeader dropHeader-4" for="drop-4">Course</label>
+                <div class="list list-4">
+                <div class="item"><a routerLink="courseregister">Register</a></div>
+                <div class="item"><a routerLink="viewcourse">Show</a></div>
+                </div>
+            </div>
+            
+          
+            
+        </div>
+      </div>
+    </div>
+  </section>
+  <router-outlet></router-outlet>
+

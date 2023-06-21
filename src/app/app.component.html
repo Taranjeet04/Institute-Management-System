@@ -1,0 +1,90 @@
+ <head>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <title>Cource Management</title>
+
+</head>
+
+<body>
+
+
+<!-- Sub Header -->
+ <div class="sub-header">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-sm-8">
+        <div class="left-content">
+          <p>Join us on Social Media Platform....!!!</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<!-- ***** Header Area Start ***** -->
+ <header class="header-area header-sticky" style="background-image: url();">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    
+                  
+                    <a href="#" class="logo" style="margin-left: 30px;">
+                        SEED INFOTECH
+                    </a>
+                    
+
+                    <!-- ***** Menu Start ***** -->
+                     <ul class="nav">
+                        <li class="scroll-to-section"><a routerLink="home">Home</a></li>
+                        <li class="scroll-to-section"><a routerLink="placement">Placement</a></li>
+                        <li class="scroll-to-section"><a routerLink="course">Batches</a></li>
+                        <li class="has-sub">
+                            <a routerLink="home">Courses</a>
+                            <ul class="sub-menu" style="height: 500px; width: 300px;">
+                                <li><a routerLink="fsd">Full Stack Java Developer</a></li>
+                                <li><a routerLink="netcourse">Full Stack Dot Net Developer </a></li>
+                                <li><a href="#">Full Stack Web Developer </a></li>
+                                <li><a href="#">C Programming </a></li>
+                                <li><a href="#">Core  Java</a></li>
+                                <li><a href="#">Advanced Java </a></li>
+                                <li><a href="#">ASP .net </a></li>
+                                <li><a href="#">HTML,CSS,BOOTSTRAP </a></li>
+                                <li><a href="#">Selenium </a></li>
+                                <li><a href="#">Angular </a></li>
+                                <li><a href="#">React Js </a></li>
+                                
+                            </ul>
+                        </li> 
+                        <li class="scroll-to-section"><a routerLink="contactus">Contact Us</a></li>
+                        <li class="scroll-to-section"><a routerLink="login">Log In</a></li> 
+                    </ul>                              
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+<section>
+<router-outlet></router-outlet>
+</section>
+<footer>
+  <app-contact></app-contact> 
+</footer>
+
+<!-- <app-carousel></app-carousel> -->
+
+<!-- <app-course></app-course> -->
+<!-- <app-website></app-website>
+ <app-about></app-about>
+ <app-contact></app-contact>
+ -->
+ <!-- <app-register></app-register> -->
+
+ <!-- <app-login></app-login> -->

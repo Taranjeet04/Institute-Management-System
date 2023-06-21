@@ -1,0 +1,88 @@
+<section class="section" id="reservation">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6 align-self-center">
+                <div class="left-text-content">
+                    <div class="section-heading">
+                        <h6>Contact Us</h6>
+                        <h2>Here You Can Make A Contact Or Just walkin to our Institute</h2>
+                    </div>
+                    <p>© Seed Infotech Private Limited. All rights reserved.All company trademarks & logos used are the properties of their respective owners.</p>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="phone">
+                                <i class="fa fa-phone"></i>
+                                <h4>Phone Numbers</h4>
+                                <span><a href="#">080-090-0990</a><br><a href="#">080-090-0880</a></span>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="message">
+                                <i class="fa fa-envelope"></i>
+                                <h4>Emails</h4>
+                                <span><a href="#">hello@company.com</a><br><a href="#">info@company.com</a></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="contact-form">
+                    <form #myEnq="ngForm" (ngSubmit)="SaveEnquiry(myEnq)" id="contact" novalidate>
+                      <div class="row">
+                        <div class="col-lg-12">
+                            <h4>Contact Us</h4>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <fieldset>
+                            <input name="name" id="name" type="text" placeholder="Your Name*" required ngModel>
+                          </fieldset>
+                        </div>
+                        
+                        <div class="col-lg-6 col-sm-12">
+                          <fieldset>
+                          <input name="email" id="email" type="text"  pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required ngModel>
+                        </fieldset>
+                        </div>
+                        <div class="col-lg-6 col-sm-12">
+                          <fieldset>
+                            <input name="contact" type="text" id="phone" placeholder="Phone Number*" required="" ngModel>
+                          </fieldset>
+                        </div>
+                        
+                        <!-- <div class="col-lg-6 col-sm-12">
+                          <fieldset>
+                            <select name="course" placeholder="Select Course" id="number-guests" ngModel>
+                              <option value="number-guests">Number Of Guests</option>
+                                <option>Developer</option>
+                                <option>Tester</option>
+                              </select>
+                          </fieldset>
+                        </div> -->
+                  
+                        <div class="col-md-6 col-sm-12">
+                          <fieldset>
+                            <select value="number-guests" name="course" id="number-guests" ngModel>
+                                <option>Developer</option>
+                                <option>Tester</option>
+                            </select>
+                          </fieldset>
+                        </div> 
+
+                    <div class="col-lg-12">
+                          <fieldset>
+                            <textarea name="message" rows="6" id="message" placeholder="Message" required="" ngModel></textarea>
+                          </fieldset>
+                        </div>
+                        <div class="col-lg-12">
+                          <fieldset>
+                            <button type="submit" id="form-submit" class="main-button-icon" [disabled]="!myEnq.valid">Submit</button>
+                          </fieldset>
+                        </div>
+                      </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

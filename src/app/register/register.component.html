@@ -1,0 +1,128 @@
+
+
+<div class="container"  id="register">
+    <h2>Register</h2>
+    <form #myStd="ngForm" (ngSubmit)="SaveStudent(myStd)" novalidate>
+      <div class="form-group" >
+        <label >First Name:-</label>
+        <input type="text" placeholder="Enter your first Name" name="firstName" required ngModel>
+       
+        <div style="margin-top: -55px; margin-left: 50%;">
+        
+          <label for="">Last Name:-</label>
+          <input type="text" id="" placeholder="Enter your Last Name" name="lastName" required ngModel>
+        </div>
+    </div>
+      
+      <div class="form-group" style="margin: left -50px;;">
+        <label for="">Email:-</label>
+        <input type="text" id="" placeholder="Enter your email" name="email" required ngModel>
+        <div style="margin-top: -55px; margin-left: 50%;">
+        <label for="">Phone No :-</label>
+        <input type="text" id="" placeholder="Enter your contact no " name="contact" required ngModel>
+      </div>
+      </div>
+      
+      <div class="form-group"  >
+        <label for="">City:-</label>
+        <input type="text" id="" placeholder="Enter your City"  name="city" ngModel required>
+        <div style="margin-top: -55px; margin-left: 50%;">
+       
+       
+          <label >Courses:-</label>
+        <select type="text" name="city" id="" placeholder="Enter your Courses" name="course" required ngModel>
+          <optgroup label="Short term Courses">
+            <option value="C Programing">C Programing</option>
+            <option value="Core java">Core Java</option>
+            <option value="Advance Java">Advance Java</option>
+            <option value="Java Framework">Java Framework</option>
+            <option value=".Net">ASP Dot Net</option>
+            <option value="Selenium">Selenium web Driver</option>
+            <option value="Angular">Angular</option>
+            <option value="ReactJS">ReactJS</option> 
+          </optgroup>
+          <optgroup label="Master Deploma(6 months)">
+            <option value="C Programing">Full Stack Java Developer</option>
+            <option value="C Programing">Full Stack .Net Developer</option>
+            <option value="C Programing">SoftWare Teasting</option>
+          </optgroup>
+          <optgroup label=" Deploma(2 months)">
+            <option>Full Stack web Developer</option>
+            <option>Data Sience</option>
+            <option>python programing</option>
+            <option value="C Programing">PHP</option>
+            <option>Digital Market</option>
+            <option>java</option>
+          </optgroup>
+          
+      </select>
+      </div></div>
+      
+        <br>
+      <div class="form-group" >
+        <label>Center:-</label>
+        <select type="text" name="city" id="" placeholder="select Nearest Center" name="center" required ngModel>
+          <option type="text" name="PUNE">Karve Road</option>
+          <option type="text" name="MUMBAI">Aundh</option>
+          <option type="text" name="HYDERABAD">chinchwad</option>
+          <option type="text" name="BANGALORE">thane</option>
+          <option type="text" name="DELHI">Hadapsar</option>
+          <option type="text" name="CHANDHIGHAD">Satara road</option>
+          <option type="text" name="CHENNAI">Sinhgad Rd</option>
+          <option type="text" name="AHMEDABAD">Viman Nagar</option>
+          <option type="text" name="NAGPUR">Wagholi</option>
+          <option type="text" name="NAGPUR">Ahmednagar</option>
+          <option type="text" name="NAGPUR">Nashik</option>
+          <option type="text" name="NAGPUR">Aurangabad</option>
+          <option type="text" name="NAGPUR">online</option>
+          
+      </select>
+        <div style="margin-top: -28px; margin-left: 50%;">
+        <label > Branch :-</label>
+        <select type="text" name="city" id="" placeholder="Enter your Branch"  name="branch" required ngModel>
+          <option type="text" name="PUNE">PUNE</option>
+          <option type="text" name="MUMBAI">MUMBAI</option>
+          <option type="text" name="HYDERABAD">HYDERABAD</option>
+          <option type="text" name="BANGALORE">BANGALORE</option>
+          <option type="text" name="DELHI">DELHI</option>
+          <option type="text" name="CHANDHIGHAD">CHANDHIGHAD</option>
+          <option type="text" name="CHENNAI">CHENNAI</option>
+          <option type="text" name="AHMEDABAD">AHMEDABAD</option>
+          <option type="text" name="NAGPUR">NAGPUR</option>
+      </select>
+      </div>
+      </div>
+      <br>
+      <div class="form-group" >
+        <label >Degree:-</label>
+        <input type="text"  placeholder="Enter your Degree" name="degree" required ngModel >
+        <div style="margin-top: -55px; margin-left: 50%;">
+        <label >Passout year:-</label>
+        <input type="date"  placeholder="Enter your Passout year" name="passYear" required ngModel>
+          </div>
+      </div>
+
+      <div class="form-group" >
+        <label >User Name :-</label>
+        <input type="text" name="username" required ngModel>
+
+        <div style="margin-top: -55px; margin-left: 50%;">
+        
+          <label for="">Paasword :-</label>
+          <input type="text" name="passwordr" required ngModel>
+        </div>
+    </div>
+
+     
+     
+<button type="submit" [disabled]="!myStd.valid">Submit</button>
+      <!-- <button (click)="SaveStudent(myStd)">Register</button> -->
+    </form>
+  </div>
+
+
+
+  
+
+
+  

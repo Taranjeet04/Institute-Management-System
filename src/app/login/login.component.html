@@ -1,0 +1,49 @@
+<!-- 
+<div class="container" onclick="onclick">
+    <div class="top"></div>
+    <div class="bottom"></div>
+    <div class="center">
+      <h2>Please Sign In</h2>
+      <input type="email" placeholder="email"/>
+      <input type="password" placeholder="password"/>
+      <h2>&nbsp;</h2>
+    </div>
+  </div> -->
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap" rel="stylesheet">
+</head>
+  <section class="heading-page header-text" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <h6>"To be a Centre of Excellence for Seed Infotech, Training and Research in Information Technologies for creating Proficient, Motivated Professionals with Ample Employment Prospects Leading to Enrichment of Nation's Human Capital".</h6>
+          <h2>Log In</h2>
+        </div>
+      </div>
+    </div>
+  </section>
+ 
+<body>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form  #chStd="ngForm" (ngSubmit)="CheckAdmin(chStd)">
+					<label for="chk" aria-hidden="true">Admin</label>
+					<input type="text" name="Uname" placeholder="username" required ngModel>
+					<input type="text" name="Upass" placeholder="Password" required ngModel>
+
+					<button type="submit">Log In</button>
+				</form>
+			</div>  
+
+			 <div class="login">
+				<form #chAdd="ngForm" (ngSubmit)="CheckStudent(chAdd)" >
+					<label for="chk" aria-hidden="true">Student</label>
+					<input type="text" name="Uname" placeholder="username" ngModel>
+					<input type="text" name="Upass" placeholder="Password" ngModel>
+					<button type="submit">Login</button>
+				</form>
+			</div>
+	</div> 
+</body>
